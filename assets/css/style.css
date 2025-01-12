@@ -41,23 +41,32 @@ body {
 }
 
 .avatar {
-  background-image: url("../../assets/img/yo.png");
+  width: 200px !important;
+  height: 200px !important;
+  background-image: url("../../assets/img/guillem.jpeg");
+  background-size: cover; /* Ensures the image covers the container without stretching */
+  background-position: center; /* Centers the image inside the container */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  border-radius: 50%; /* Optional: Makes the avatar circular */
 }
 
 .btn-custom {
   color: black;
   background-color: orange;
   border-color: darkorange;
+  font-weight: bold; /* Define el mismo peso de la fuente */
+  transition: all 0.3s ease; /* Suaviza las transiciones */
 }
 
 .btn-custom:hover {
   color: black;
   opacity: 0.85;
-  background-color: #ffa500;
-  border-color: darkorange;
+  background-color: #ff9a1f; /* Naranja brillante para hover */
+  border-color: #ff9a1f; /* Un borde más oscuro para hover */
   text-align-last: center;
-  font-weight: bold;
+  transform: scale(1.05);
 }
+
 
 .portfolio-info-card {
   padding: 40px;
@@ -171,4 +180,98 @@ hr {
   border-radius: 2em;
   margin: 5px;
 }
+
+.tech-container
+{
+  font-size: 1.25em;
+  font-weight: 300;
+  text-align: center;
+  align-items: center;
+}
+
+.tech-icons {
+  margin-top: 20px;
+}
+
+.tech-icons i {
+  font-size: 2rem; /* Tamaño de los iconos */
+  margin: 0 10px; /* Espaciado entre iconos */
+  color: #6c757d; /* Color inicial */
+  transition: color 0.3s ease;
+}
+
+.tech-icons i:hover {
+  color: #ffa500; /* Color al pasar el cursor */
+  transform: scale(1.15);
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1); /* Tamaño normal */
+    opacity: 1; /* Visible */
+  }
+  50% {
+    transform: scale(1.2); /* Aumenta el tamaño para simular acercarse */
+    opacity: 0.8; /* Opacidad ligeramente reducida */
+  }
+  100% {
+    transform: scale(1); /* Vuelve al tamaño normal */
+    opacity: 1; /* Vuelve a ser completamente visible */
+  }
+}
+
+/* Aplicar la animación al ícono de lupa */
+.zoom-icon {
+  animation: zoom 1s ease-in-out infinite; /* La animación se repite infinitamente */
+}
+
+.contact {
+  background-color: rgb(75, 75, 75); /* Fondo ligeramente más claro */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-info a {
+  color: white; /* Texto de los enlaces en blanco por defecto */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.contact-info a:nth-child(1) i {
+  color: #0077b5; /* Azul para LinkedIn */
+}
+
+.contact-info a:nth-child(2) i {
+  color: #171515; /* Negro para GitHub */
+}
+
+.contact-info a:nth-child(3) i {
+  color: #FF0000; /* Rojo para YouTube */
+}
+
+.contact-info a:hover {
+  color: #ffc800; /* Texto amarillo al hacer hover */
+}
+
+.contact-info a:hover i {
+  color: #ffc800; /* Íconos amarillos al hacer hover */
+}
+.gif img {
+  max-width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: auto; /* Mantén la proporción de 3:2 */ /* Elimina el espacio extra del elemento inline */
+  overflow: clip;
+
+  vertical-align: middle;
+}
+
+/* Ajusta el alto de los contenedores si es necesario */
+.gif {
+
+  display:flex;
+  vertical-align: middle;
+}
+
+
 

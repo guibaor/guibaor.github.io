@@ -1,4 +1,4 @@
-    document.onkeydown = function (e) {
+/*     document.onkeydown = function (e) {
         if (event.keyCode == 123) {
             return false;
         }
@@ -19,4 +19,4 @@
         }
          
     }
-    document.oncontextmenu = function(){return false;}
+    document.oncontextmenu = function(){return false;} */
